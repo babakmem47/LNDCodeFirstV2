@@ -1,4 +1,4 @@
-namespace LNDCodeFirstV2.Migrations
+﻿namespace LNDCodeFirstV2.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
