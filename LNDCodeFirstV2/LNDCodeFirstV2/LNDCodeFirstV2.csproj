@@ -162,6 +162,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="EntityConfigurations\SematConfiguration.cs" />
+    <Compile Include="EntityConfigurations\TelTypeConfiguration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -185,11 +186,16 @@
     <Compile Include="Migrations\201811150958157_PopulateSematsTable1.Designer.cs">
       <DependentUpon>201811150958157_PopulateSematsTable1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811151030137_AddTelType.cs" />
+    <Compile Include="Migrations\201811151030137_AddTelType.Designer.cs">
+      <DependentUpon>201811151030137_AddTelType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Semat.cs" />
+    <Compile Include="Models\TelType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -276,6 +282,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811150958157_PopulateSematsTable1.resx">
       <DependentUpon>201811150958157_PopulateSematsTable1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811151030137_AddTelType.resx">
+      <DependentUpon>201811151030137_AddTelType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

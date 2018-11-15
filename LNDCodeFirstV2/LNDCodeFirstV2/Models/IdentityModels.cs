@@ -23,9 +23,13 @@ namespace LNDCodeFirstV2.Models
     {
         public DbSet<Semat> Semats { get; set; }
 
+        public DbSet<TelType> TelTypes { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new SematConfiguration());
+
+            modelBuilder.Configurations.Add(new TelTypeConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }
