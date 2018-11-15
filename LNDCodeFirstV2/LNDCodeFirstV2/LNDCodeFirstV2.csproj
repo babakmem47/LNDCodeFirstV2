@@ -161,6 +161,8 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="EntityConfigurations\CompanyConfiguration.cs" />
+    <Compile Include="EntityConfigurations\FieldOfActivityConfiguration.cs" />
     <Compile Include="EntityConfigurations\SematConfiguration.cs" />
     <Compile Include="EntityConfigurations\TelTypeConfiguration.cs" />
     <Compile Include="Global.asax.cs">
@@ -190,8 +192,14 @@
     <Compile Include="Migrations\201811151030137_AddTelType.Designer.cs">
       <DependentUpon>201811151030137_AddTelType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811151511079_CreateCompanyAndFieldOfActivityModels.cs" />
+    <Compile Include="Migrations\201811151511079_CreateCompanyAndFieldOfActivityModels.Designer.cs">
+      <DependentUpon>201811151511079_CreateCompanyAndFieldOfActivityModels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Company.cs" />
+    <Compile Include="Models\FieldOfActivity.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Semat.cs" />
@@ -221,7 +229,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -285,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811151030137_AddTelType.resx">
       <DependentUpon>201811151030137_AddTelType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811151511079_CreateCompanyAndFieldOfActivityModels.resx">
+      <DependentUpon>201811151511079_CreateCompanyAndFieldOfActivityModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

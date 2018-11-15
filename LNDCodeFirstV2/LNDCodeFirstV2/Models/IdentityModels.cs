@@ -25,11 +25,19 @@ namespace LNDCodeFirstV2.Models
 
         public DbSet<TelType> TelTypes { get; set; }
 
+        public DbSet<Company> Companies { get; set; }
+
+        public DbSet<FieldOfActivity> FieldOfActivities { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new SematConfiguration());
 
             modelBuilder.Configurations.Add(new TelTypeConfiguration());
+
+            modelBuilder.Configurations.Add(new CompanyConfiguration());
+
+            modelBuilder.Configurations.Add(new FieldOfActivityConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }
