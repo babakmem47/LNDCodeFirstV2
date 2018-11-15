@@ -1,6 +1,7 @@
 ﻿using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using LNDCodeFirstV2.EntityConfigurations;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
@@ -22,6 +23,12 @@ namespace LNDCodeFirstV2.Models
     {
         public DbSet<Semat> Semats { get; set; }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new SematConfiguration());
+
+            base.OnModelCreating(modelBuilder);
+        }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
