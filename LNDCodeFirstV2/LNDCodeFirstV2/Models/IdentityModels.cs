@@ -29,6 +29,8 @@ namespace LNDCodeFirstV2.Models
 
         public DbSet<FieldOfActivity> FieldOfActivities { get; set; }
 
+        public DbSet<Setad> Setads { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new SematConfiguration());
@@ -38,6 +40,9 @@ namespace LNDCodeFirstV2.Models
             modelBuilder.Configurations.Add(new CompanyConfiguration());
 
             modelBuilder.Configurations.Add(new FieldOfActivityConfiguration());
+            
+            modelBuilder.Configurations.Add(new SetadConfiguration());
+
 
             base.OnModelCreating(modelBuilder);
         }

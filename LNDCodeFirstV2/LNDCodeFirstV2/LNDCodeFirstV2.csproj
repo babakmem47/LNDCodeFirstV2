@@ -164,6 +164,7 @@
     <Compile Include="EntityConfigurations\CompanyConfiguration.cs" />
     <Compile Include="EntityConfigurations\FieldOfActivityConfiguration.cs" />
     <Compile Include="EntityConfigurations\SematConfiguration.cs" />
+    <Compile Include="EntityConfigurations\SetadConfiguration.cs" />
     <Compile Include="EntityConfigurations\TelTypeConfiguration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -196,6 +197,10 @@
     <Compile Include="Migrations\201811151511079_CreateCompanyAndFieldOfActivityModels.Designer.cs">
       <DependentUpon>201811151511079_CreateCompanyAndFieldOfActivityModels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811161257344_CreateSetad.cs" />
+    <Compile Include="Migrations\201811161257344_CreateSetad.Designer.cs">
+      <DependentUpon>201811161257344_CreateSetad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Company.cs" />
@@ -203,6 +208,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Semat.cs" />
+    <Compile Include="Models\Setad.cs" />
     <Compile Include="Models\TelType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -298,6 +304,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811151511079_CreateCompanyAndFieldOfActivityModels.resx">
       <DependentUpon>201811151511079_CreateCompanyAndFieldOfActivityModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811161257344_CreateSetad.resx">
+      <DependentUpon>201811161257344_CreateSetad.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
