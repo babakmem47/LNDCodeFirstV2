@@ -31,6 +31,8 @@ namespace LNDCodeFirstV2.Models
 
         public DbSet<Setad> Setads { get; set; }
 
+        public DbSet<Section> Sections { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new SematConfiguration());
@@ -43,6 +45,7 @@ namespace LNDCodeFirstV2.Models
             
             modelBuilder.Configurations.Add(new SetadConfiguration());
 
+            modelBuilder.Configurations.Add(new SectionConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }

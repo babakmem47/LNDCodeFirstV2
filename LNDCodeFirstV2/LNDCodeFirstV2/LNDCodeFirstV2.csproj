@@ -202,6 +202,10 @@
     <Compile Include="Migrations\201811161257344_CreateSetad.Designer.cs">
       <DependentUpon>201811161257344_CreateSetad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811161926511_CreateSectionAndAddRelationWithSetad.cs" />
+    <Compile Include="Migrations\201811161926511_CreateSectionAndAddRelationWithSetad.Designer.cs">
+      <DependentUpon>201811161926511_CreateSectionAndAddRelationWithSetad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Company.cs" />
@@ -309,6 +313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811161257344_CreateSetad.resx">
       <DependentUpon>201811161257344_CreateSetad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811161926511_CreateSectionAndAddRelationWithSetad.resx">
+      <DependentUpon>201811161926511_CreateSectionAndAddRelationWithSetad.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

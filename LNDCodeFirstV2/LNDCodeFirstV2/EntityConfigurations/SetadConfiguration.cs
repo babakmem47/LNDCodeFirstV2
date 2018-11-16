@@ -25,12 +25,10 @@ namespace LNDCodeFirstV2.EntityConfigurations
             Property(p => p.Address)
                 .HasMaxLength(200);
 
-            Property(p => p.IpRange)
-                .HasMaxLength(15);
 
             /////////// Setad Relation ///////////////
-            HasMany(st => st.Sections)
-                .WithRequired(sc => sc.Setad);
+
+            // Many-To-Many relationship with Section(in SectionConfiguration)
 
             //////////////////////////////////////////
 
