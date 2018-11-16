@@ -16,7 +16,14 @@ namespace LNDCodeFirstV2.EntityConfigurations
                 .HasMaxLength(50);
 
             /////////// Section Relation ///////////////
-            
+            HasRequired(sc => sc.Setad)
+                .WithMany(st => st.Sections)
+                .HasForeignKey(sc => sc.SetadId);
+
+
+            ///////////////////////////////////////////
+
+
         }
     }
 }

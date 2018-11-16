@@ -19,5 +19,7 @@ namespace LNDCodeFirstV2.Models
 
         public string IpRange { get; set; }
 
+        public IList<Section> Sections { get; set; }
+
     }
 }

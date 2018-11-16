@@ -28,6 +28,12 @@ namespace LNDCodeFirstV2.EntityConfigurations
             Property(p => p.IpRange)
                 .HasMaxLength(15);
 
+            /////////// Setad Relation ///////////////
+            HasMany(st => st.Sections)
+                .WithRequired(sc => sc.Setad);
+
+            //////////////////////////////////////////
+
         }
     }
 }

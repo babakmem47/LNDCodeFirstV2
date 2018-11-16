@@ -11,9 +11,9 @@ namespace LNDCodeFirstV2.Models
 
         public string Name { get; set; }
 
-        public Setad Setad { get; set; }
-
         public int SetadId { get; set; }
+
+        public Setad Setad { get; set; }
 
     }
 }
