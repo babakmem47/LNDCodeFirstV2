@@ -163,6 +163,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="EntityConfigurations\CompanyConfiguration.cs" />
     <Compile Include="EntityConfigurations\FieldOfActivityConfiguration.cs" />
+    <Compile Include="EntityConfigurations\SectionConfiguration.cs" />
     <Compile Include="EntityConfigurations\SematConfiguration.cs" />
     <Compile Include="EntityConfigurations\SetadConfiguration.cs" />
     <Compile Include="EntityConfigurations\TelTypeConfiguration.cs" />
@@ -207,6 +208,7 @@
     <Compile Include="Models\FieldOfActivity.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Section.cs" />
     <Compile Include="Models\Semat.cs" />
     <Compile Include="Models\Setad.cs" />
     <Compile Include="Models\TelType.cs" />
