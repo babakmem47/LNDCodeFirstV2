@@ -161,6 +161,9 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="EntityConfigurations\AtmConfiguration.cs" />
+    <Compile Include="EntityConfigurations\BajjeConfiguration.cs" />
+    <Compile Include="EntityConfigurations\BranchConfiguration.cs" />
     <Compile Include="EntityConfigurations\CompanyConfiguration.cs" />
     <Compile Include="EntityConfigurations\FieldOfActivityConfiguration.cs" />
     <Compile Include="EntityConfigurations\IpRangeConfiguration.cs" />
@@ -211,8 +214,15 @@
     <Compile Include="Migrations\201811170457269_AddIpRangeClassAndItsRelationWithSetadAndSection.Designer.cs">
       <DependentUpon>201811170457269_AddIpRangeClassAndItsRelationWithSetadAndSection.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811170815411_CreateBranchBajjeAtmAndRelations.cs" />
+    <Compile Include="Migrations\201811170815411_CreateBranchBajjeAtmAndRelations.Designer.cs">
+      <DependentUpon>201811170815411_CreateBranchBajjeAtmAndRelations.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Atm.cs" />
+    <Compile Include="Models\Bajje.cs" />
+    <Compile Include="Models\Branch.cs" />
     <Compile Include="Models\Company.cs" />
     <Compile Include="Models\FieldOfActivity.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -325,6 +335,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811170457269_AddIpRangeClassAndItsRelationWithSetadAndSection.resx">
       <DependentUpon>201811170457269_AddIpRangeClassAndItsRelationWithSetadAndSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811170815411_CreateBranchBajjeAtmAndRelations.resx">
+      <DependentUpon>201811170815411_CreateBranchBajjeAtmAndRelations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

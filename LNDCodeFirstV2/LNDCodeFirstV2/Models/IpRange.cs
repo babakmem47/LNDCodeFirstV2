@@ -17,5 +17,11 @@ namespace LNDCodeFirstV2.Models
 
         public IList<Section> Sections { get; set; }
 
+        public IList<Branch> Branches { get; set; }
+
+        public IList<Bajje> Bajjes { get; set; }
+
+        public IList<Atm> Atms { get; set; }
+
     }
 }

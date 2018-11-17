@@ -35,6 +35,12 @@ namespace LNDCodeFirstV2.Models
 
         public DbSet<IpRange> IpRanges { get; set; }
 
+        public DbSet<Branch> Branches { get; set; }
+
+        public DbSet<Bajje> Bajjes { get; set; }
+
+        public DbSet<Atm> Atms { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new SematConfiguration());
@@ -50,6 +56,12 @@ namespace LNDCodeFirstV2.Models
             modelBuilder.Configurations.Add(new SectionConfiguration());
 
             modelBuilder.Configurations.Add(new IpRangeConfiguration());
+
+            modelBuilder.Configurations.Add(new BranchConfiguration());
+
+            modelBuilder.Configurations.Add(new BajjeConfiguration());
+
+            modelBuilder.Configurations.Add(new AtmConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }

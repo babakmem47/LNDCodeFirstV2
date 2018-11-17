@@ -5,7 +5,7 @@ using System.Web;
 
 namespace LNDCodeFirstV2.Models
 {
-    public class Setad
+    public class Branch
     {
         public int Id { get; set; }
 
@@ -13,16 +13,21 @@ namespace LNDCodeFirstV2.Models
 
         public string Shakhes { get; set; }
 
-        public byte IsModiriatShoab { get; set; }
-        
+        public bool IsMomtaz { get; set; }
+
         public string Address { get; set; }
 
-        public IList<Section> Sections { get; set; }
+        public Setad Setad { get; set; }
+
+        public int? SetadId { get; set; }
 
         public IpRange IpRange { get; set; }
 
         public int IpRangeId { get; set; }
 
-        public IList<Branch> Branches { get; set; }
+        public IList<Bajje> Bajjes { get; set; }
+
+        public IList<Atm> Atms { get; set; }
+
     }
 }
