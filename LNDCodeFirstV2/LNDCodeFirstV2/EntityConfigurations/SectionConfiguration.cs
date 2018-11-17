@@ -16,6 +16,7 @@ namespace LNDCodeFirstV2.EntityConfigurations
                 .HasMaxLength(50);
 
             /////////// Section Relation ///////////////
+            // Many-To-Many with Setad:
             HasMany(sc => sc.Setads)
                 .WithMany(st => st.Sections)
                 .Map(m =>
@@ -24,6 +25,12 @@ namespace LNDCodeFirstV2.EntityConfigurations
                     m.MapLeftKey("SectionId");
                     m.MapRightKey("SetadId");
                 });
+
+            // (0..1)-To-Many with IpRange:
+            HasOptional(sc => sc.IpRange)
+                .WithMany(i => i.Sections)
+                .HasForeignKey(sc => sc.IpRangeId);
+
 
             ///////////////////////////////////////////
 

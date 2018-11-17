@@ -33,6 +33,8 @@ namespace LNDCodeFirstV2.Models
 
         public DbSet<Section> Sections { get; set; }
 
+        public DbSet<IpRange> IpRanges { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new SematConfiguration());
@@ -46,6 +48,8 @@ namespace LNDCodeFirstV2.Models
             modelBuilder.Configurations.Add(new SetadConfiguration());
 
             modelBuilder.Configurations.Add(new SectionConfiguration());
+
+            modelBuilder.Configurations.Add(new IpRangeConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }

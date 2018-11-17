@@ -163,6 +163,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="EntityConfigurations\CompanyConfiguration.cs" />
     <Compile Include="EntityConfigurations\FieldOfActivityConfiguration.cs" />
+    <Compile Include="EntityConfigurations\IpRangeConfiguration.cs" />
     <Compile Include="EntityConfigurations\SectionConfiguration.cs" />
     <Compile Include="EntityConfigurations\SematConfiguration.cs" />
     <Compile Include="EntityConfigurations\SetadConfiguration.cs" />
@@ -206,11 +207,16 @@
     <Compile Include="Migrations\201811161926511_CreateSectionAndAddRelationWithSetad.Designer.cs">
       <DependentUpon>201811161926511_CreateSectionAndAddRelationWithSetad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811170457269_AddIpRangeClassAndItsRelationWithSetadAndSection.cs" />
+    <Compile Include="Migrations\201811170457269_AddIpRangeClassAndItsRelationWithSetadAndSection.Designer.cs">
+      <DependentUpon>201811170457269_AddIpRangeClassAndItsRelationWithSetadAndSection.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Company.cs" />
     <Compile Include="Models\FieldOfActivity.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\IpRange.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Section.cs" />
     <Compile Include="Models\Semat.cs" />
@@ -316,6 +322,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811161926511_CreateSectionAndAddRelationWithSetad.resx">
       <DependentUpon>201811161926511_CreateSectionAndAddRelationWithSetad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811170457269_AddIpRangeClassAndItsRelationWithSetadAndSection.resx">
+      <DependentUpon>201811170457269_AddIpRangeClassAndItsRelationWithSetadAndSection.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

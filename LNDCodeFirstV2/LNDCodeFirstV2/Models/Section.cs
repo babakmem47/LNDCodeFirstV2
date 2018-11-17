@@ -13,5 +13,9 @@ namespace LNDCodeFirstV2.Models
 
         public IList<Setad> Setads { get; set; }
 
+        public IpRange IpRange { get; set; }
+
+        public int? IpRangeId { get; set; }
+
     }
 }

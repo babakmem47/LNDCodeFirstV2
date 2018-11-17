@@ -28,7 +28,12 @@ namespace LNDCodeFirstV2.EntityConfigurations
 
             /////////// Setad Relation ///////////////
 
-            // Many-To-Many relationship with Section(in SectionConfiguration)
+            // Many-To-Many relationship with Section(configured in SectionConfiguration)
+
+            // One-To-Many relationship with IpRange
+            HasRequired(st => st.IpRange)
+                .WithMany(i => i.Setads)
+                .HasForeignKey(st => st.IpRangeId);
 
             //////////////////////////////////////////
 
