@@ -32,16 +32,20 @@ namespace LNDCodeFirstV2.EntityConfigurations
                 .HasForeignKey(br => br.IpRangeId)
                 .WillCascadeOnDelete(false);
 
-            // (0..1)-To-Many with Bajje:
+            // Many-To-(0..1) with Bajje:
             HasMany(br => br.Bajjes)
                 .WithRequired(bj => bj.Branch)
                 .WillCascadeOnDelete(false);
 
-            // (0..1)-To-Many with Atm:
+            // Many-To-(0..1) with Atm:
             HasMany(br => br.Atms)
                 .WithRequired(a => a.Branch)
                 .WillCascadeOnDelete(false);
 
+            // Many-To-(0..1) with Person:
+            HasMany(br => br.Persons)
+                .WithOptional(a => a.Branch)
+                .WillCascadeOnDelete(false);
 
             ///////////////////////////////////////////
 

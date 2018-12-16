@@ -23,5 +23,7 @@ namespace LNDCodeFirstV2.Models
 
         public IList<Atm> Atms { get; set; }
 
+        public IList<Person> Persons { get; set; }
+
     }
 }

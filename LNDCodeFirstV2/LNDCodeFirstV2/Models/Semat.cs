@@ -11,5 +11,7 @@ namespace LNDCodeFirstV2.Models
 
         public string Name { get; set; }
 
+        public IList<Person> Persons { get; set; }
+
     }
 }

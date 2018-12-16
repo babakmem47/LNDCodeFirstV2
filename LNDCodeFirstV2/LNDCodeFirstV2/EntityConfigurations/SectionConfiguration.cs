@@ -32,6 +32,11 @@ namespace LNDCodeFirstV2.EntityConfigurations
                 .HasForeignKey(sc => sc.IpRangeId);
 
 
+            // Many-To-(0..1) with Person:
+            HasMany(sc => sc.Persons)
+                .WithOptional(p => p.Section)
+                .WillCascadeOnDelete(false);
+
             ///////////////////////////////////////////
 
 

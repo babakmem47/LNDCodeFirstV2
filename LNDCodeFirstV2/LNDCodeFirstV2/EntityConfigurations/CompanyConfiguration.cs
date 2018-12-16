@@ -23,6 +23,8 @@ namespace LNDCodeFirstV2.EntityConfigurations
                 .HasMaxLength(30);
 
             /////////////// Company Relations //////////////
+
+            //Many-To-Many with FieldOfActivity
             HasMany(c => c.FieldOfActivities)
                 .WithMany(f => f.Companies)
                 .Map(m =>
@@ -31,6 +33,12 @@ namespace LNDCodeFirstV2.EntityConfigurations
                     m.MapLeftKey("CompanyId");
                     m.MapRightKey("FieldOfActivityId");
                 });
+
+            // Many-To-(0..1) with Person
+            HasMany(c => c.Persons)
+                .WithOptional(p => p.Company)
+                .WillCascadeOnDelete(false);
+
             /////////////////////////////////////////////////
             
 

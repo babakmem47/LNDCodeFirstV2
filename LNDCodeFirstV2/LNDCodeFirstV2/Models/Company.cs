@@ -17,5 +17,7 @@ namespace LNDCodeFirstV2.Models
 
         public IList<FieldOfActivity> FieldOfActivities { get; set; }
 
+        public IList<Person> Persons { get; set; }
+
     }
 }

@@ -17,5 +17,7 @@ namespace LNDCodeFirstV2.Models
 
         public int? IpRangeId { get; set; }
 
+        public IList<Person> Persons { get; set; }
+
     }
 }

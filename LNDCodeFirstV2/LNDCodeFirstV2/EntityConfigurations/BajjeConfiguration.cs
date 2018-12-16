@@ -31,12 +31,16 @@ namespace LNDCodeFirstV2.EntityConfigurations
                 .HasForeignKey(bj => bj.BranchId)
                 .WillCascadeOnDelete(false);
 
-            // One-To-Many with Atm:
+            // Many-To-One with Atm:
             HasMany(bj => bj.Atms)
                 .WithOptional(a => a.Bajje)
                 .WillCascadeOnDelete(false);
 
-            
+            // Many-To-(0..1) with Person:
+            HasMany(bj => bj.Persons)
+                .WithOptional(i => i.Bajje)
+                .WillCascadeOnDelete(false);
+
             //////////////////////////////////////////
 
         }

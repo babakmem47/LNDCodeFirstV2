@@ -167,6 +167,7 @@
     <Compile Include="EntityConfigurations\CompanyConfiguration.cs" />
     <Compile Include="EntityConfigurations\FieldOfActivityConfiguration.cs" />
     <Compile Include="EntityConfigurations\IpRangeConfiguration.cs" />
+    <Compile Include="EntityConfigurations\PersonConfiguration.cs" />
     <Compile Include="EntityConfigurations\SectionConfiguration.cs" />
     <Compile Include="EntityConfigurations\SematConfiguration.cs" />
     <Compile Include="EntityConfigurations\SetadConfiguration.cs" />
@@ -228,6 +229,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\IpRange.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Section.cs" />
     <Compile Include="Models\Semat.cs" />
     <Compile Include="Models\Setad.cs" />

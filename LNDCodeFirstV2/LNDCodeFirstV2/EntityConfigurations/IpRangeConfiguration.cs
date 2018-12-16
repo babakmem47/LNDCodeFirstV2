@@ -21,27 +21,27 @@ namespace LNDCodeFirstV2.EntityConfigurations
 
 
             /////////// IpRange Relation ///////////////
-            // One-To-Many with Setad:
+            // Many-To-One with Setad:
             HasMany(i => i.Setads)
                 .WithRequired(st => st.IpRange)
                 .WillCascadeOnDelete(false);
 
-            // (0..1)-To-Many with Section:
+            // Many-To-(0..1) with Section:
             HasMany(i => i.Sections)
                 .WithOptional(sc => sc.IpRange)
                 .WillCascadeOnDelete(false);
 
-            // One-To-Many with Branch
+            // Many-To-One with Branch
             HasMany(i => i.Branches)
                 .WithRequired(b => b.IpRange)
                 .WillCascadeOnDelete(false);
 
-            // (0..1)-To-Many with Bajje
+            // Many-To-(0..1) with Bajje
             HasMany(i => i.Bajjes)
                 .WithOptional(b => b.IpRange)
                 .WillCascadeOnDelete(false);
 
-            // One-To-Many with Atm
+            // Many-To-One with Atm
             HasMany(i => i.Atms)
                 .WithRequired(b => b.IpRange)
                 .WillCascadeOnDelete(false);

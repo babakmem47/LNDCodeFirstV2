@@ -14,6 +14,16 @@ namespace LNDCodeFirstV2.EntityConfigurations
             Property(p => p.Name)
                 .IsRequired()
                 .HasMaxLength(40);
+
+            /////////// Semat Relation ///////////////
+
+            // Many-To-(0..1) with Person
+            HasMany(sm => sm.Persons)
+                .WithOptional(p => p.Semat)
+                .WillCascadeOnDelete(false);
+            
+            //////////////////////////////////////////
+
         }
     }
 }
