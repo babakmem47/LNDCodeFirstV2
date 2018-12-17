@@ -223,6 +223,18 @@
     <Compile Include="Migrations\201812161227525_CreatePersonClassAndAddRelations.Designer.cs">
       <DependentUpon>201812161227525_CreatePersonClassAndAddRelations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812161250259_CreatePersonClassAndAddRelations1.cs" />
+    <Compile Include="Migrations\201812161250259_CreatePersonClassAndAddRelations1.Designer.cs">
+      <DependentUpon>201812161250259_CreatePersonClassAndAddRelations1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812170738125_CreatePersonClassAndAddRelations2.cs" />
+    <Compile Include="Migrations\201812170738125_CreatePersonClassAndAddRelations2.Designer.cs">
+      <DependentUpon>201812170738125_CreatePersonClassAndAddRelations2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812170841474_ChangePersonClass.cs" />
+    <Compile Include="Migrations\201812170841474_ChangePersonClass.Designer.cs">
+      <DependentUpon>201812170841474_ChangePersonClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Atm.cs" />
@@ -347,6 +359,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812161227525_CreatePersonClassAndAddRelations.resx">
       <DependentUpon>201812161227525_CreatePersonClassAndAddRelations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812161250259_CreatePersonClassAndAddRelations1.resx">
+      <DependentUpon>201812161250259_CreatePersonClassAndAddRelations1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812170738125_CreatePersonClassAndAddRelations2.resx">
+      <DependentUpon>201812170738125_CreatePersonClassAndAddRelations2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812170841474_ChangePersonClass.resx">
+      <DependentUpon>201812170841474_ChangePersonClass.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -11,9 +11,12 @@ namespace LNDCodeFirstV2.EntityConfigurations
     {
         public PersonConfiguration()
         {
+            //Override the name of the table
+            ToTable("Persons");
+
             Property(p => p.Name)
                 .IsRequired()
-                .HasMaxLength(25);
+                .HasMaxLength(30);
 
             Property(p => p.Email)
                 .HasMaxLength(30);

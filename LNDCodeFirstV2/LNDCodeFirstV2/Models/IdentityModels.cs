@@ -63,6 +63,8 @@ namespace LNDCodeFirstV2.Models
 
             modelBuilder.Configurations.Add(new AtmConfiguration());
 
+            modelBuilder.Configurations.Add(new PersonConfiguration());
+
             base.OnModelCreating(modelBuilder);
         }
 
