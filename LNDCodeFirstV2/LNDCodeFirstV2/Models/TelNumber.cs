@@ -5,17 +5,15 @@ using System.Web;
 
 namespace LNDCodeFirstV2.Models
 {
-    public class Person
+    public class TelNumber
     {
         public int Id { get; set; }
 
-        public string Name { get; set; }
+        public string Number { get; set; }
 
-        public string Email { get; set; }
+        public TelType TelType { get; set; }
 
-        public Semat Semat { get; set; }
-
-        public int? SematId { get; set; }
+        public int TelTypeId { get; set; }
 
         public Company Company { get; set; }
 
@@ -33,7 +31,7 @@ namespace LNDCodeFirstV2.Models
 
         public int? BajjeId { get; set; }
 
-        public IList<TelNumber> TelNumbers { get; set; }
+        public IList<Person> Persons { get; set; }
 
     }
 }

@@ -21,8 +21,8 @@ namespace LNDCodeFirstV2.EntityConfigurations
             Property(p => p.Email)
                 .HasMaxLength(30);
 
-            /////////// Person Relation ///////////////
-            //(0..1)-To-Many with Semat
+            /////////// Person Relation ////////////////////
+            //Many-To-(0..1) with Semat
             HasOptional(p => p.Semat)
                 .WithMany(s => s.Persons)
                 .HasForeignKey(p => p.SematId);
@@ -47,8 +47,17 @@ namespace LNDCodeFirstV2.EntityConfigurations
                 .WithMany(bj => bj.Persons)
                 .HasForeignKey(p => p.BajjeId);
 
-           
-            ///////////////////////////////////////////
+            // Many-To-Many with TelNumber
+            HasMany(p => p.TelNumbers)
+                .WithMany(tn => tn.Persons)
+                .Map(m =>
+                {
+                    m.ToTable("PersonTelNumbers");
+                    m.MapLeftKey("PersonId");
+                    m.MapRightKey("TelNumberId");
+                });
+
+            ///////////////////////////////////////////////
 
 
 

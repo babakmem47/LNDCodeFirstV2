@@ -11,5 +11,7 @@ namespace LNDCodeFirstV2.Models
 
         public string Name { get; set; }
 
+        public IList<TelNumber> TelNumbers { get; set; }
+
     }
 }

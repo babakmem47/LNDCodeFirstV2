@@ -31,5 +31,6 @@ namespace LNDCodeFirstV2.Models
 
         public IList<Person> Persons { get; set; }
 
+        public IList<TelNumber> TelNumbers { get; set; }
     }
 }

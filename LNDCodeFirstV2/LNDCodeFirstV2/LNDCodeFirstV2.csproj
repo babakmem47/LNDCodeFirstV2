@@ -171,6 +171,7 @@
     <Compile Include="EntityConfigurations\SectionConfiguration.cs" />
     <Compile Include="EntityConfigurations\SematConfiguration.cs" />
     <Compile Include="EntityConfigurations\SetadConfiguration.cs" />
+    <Compile Include="EntityConfigurations\TelNumberConfiguration.cs" />
     <Compile Include="EntityConfigurations\TelTypeConfiguration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -235,6 +236,14 @@
     <Compile Include="Migrations\201812170841474_ChangePersonClass.Designer.cs">
       <DependentUpon>201812170841474_ChangePersonClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812171131552_AddTelNumberRelationsFluentApis.cs" />
+    <Compile Include="Migrations\201812171131552_AddTelNumberRelationsFluentApis.Designer.cs">
+      <DependentUpon>201812171131552_AddTelNumberRelationsFluentApis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812190834270_CompleteTelNumberFluentApi.cs" />
+    <Compile Include="Migrations\201812190834270_CompleteTelNumberFluentApi.Designer.cs">
+      <DependentUpon>201812190834270_CompleteTelNumberFluentApi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Atm.cs" />
@@ -249,6 +258,7 @@
     <Compile Include="Models\Section.cs" />
     <Compile Include="Models\Semat.cs" />
     <Compile Include="Models\Setad.cs" />
+    <Compile Include="Models\TelNumber.cs" />
     <Compile Include="Models\TelType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -368,6 +378,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812170841474_ChangePersonClass.resx">
       <DependentUpon>201812170841474_ChangePersonClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812171131552_AddTelNumberRelationsFluentApis.resx">
+      <DependentUpon>201812171131552_AddTelNumberRelationsFluentApis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812190834270_CompleteTelNumberFluentApi.resx">
+      <DependentUpon>201812190834270_CompleteTelNumberFluentApi.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

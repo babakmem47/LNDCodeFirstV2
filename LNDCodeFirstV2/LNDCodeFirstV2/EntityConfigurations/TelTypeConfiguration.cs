@@ -14,6 +14,18 @@ namespace LNDCodeFirstV2.EntityConfigurations
             Property(p => p.Name)
                 .IsRequired()
                 .HasMaxLength(8);
+
+         /////////// Person Relation ///////////////
+         // One-To-Many with TelNumber
+            HasMany(tt => tt.TelNumbers)
+                .WithRequired(tn => tn.TelType)
+                .WillCascadeOnDelete(false);
+
+        ////////////////////////////////////////////
+        
+
+
+
         }
     }
 }

@@ -65,6 +65,8 @@ namespace LNDCodeFirstV2.Models
 
             modelBuilder.Configurations.Add(new PersonConfiguration());
 
+            modelBuilder.Configurations.Add(new TelNumberConfiguration());
+
             base.OnModelCreating(modelBuilder);
         }
 
